@@ -1,0 +1,51 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 150px 80px 100px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+  color: white;
+}
+
+.hero-left {
+  width: 50%;
+}
+
+.hero-left h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-left p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.hero-left ul {
+  margin-bottom: 25px;
+}
+
+.hero-left ul li {
+  margin-bottom: 10px;
+}
+
+.start-btn {
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: none;
+  background: white;
+  color: #ff512f;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hero-right {
+  width: 45%;
+  text-align: right;
+}
+
+.hero-right img {
+  width: 80%;
+  background-color: transparent;
+}
