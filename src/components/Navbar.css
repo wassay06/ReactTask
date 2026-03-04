@@ -41,14 +41,15 @@
   color: #ff512f;
 } */
 
-
+/* --------------------- */
+/* 
 .navbar {
   display: flex;
-  justify-content: space-between;   /* logo left, links right */
+  justify-content: space-between;   
   align-items: center;
   padding: 25px 80px;
   position: absolute;
-  width: 100%;          /* FIXED */
+  width: 100%;          
   top: 0;
   left: 0;
   color: white;
@@ -86,4 +87,55 @@
 .download-btn:hover {
   background: white;
   color: #ff512f;
+} */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 80px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: white;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.download-btn {
+  padding: 8px 18px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* 🔥 MOBILE NAVBAR */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
